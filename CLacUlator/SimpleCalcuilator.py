@@ -35,7 +35,7 @@ def button_subtract():
     entry.delete(0, END)
 
 def button_multiply():
-    first_number=e.get()
+    first_number=entry.get()
     global f_num
     global math
     math="multiply"
@@ -74,13 +74,13 @@ def button_equal():
         entry.insert(0, f_num + float(second_number))
     elif math == "subtract":
         entry.insert(0,f_num - float(second_number))
-    elif math == "multipliply":
-        entry.insert(0,f_num  * float(second_number))
+    elif math == "multiply":
+        entry.insert(0,f_num * float(second_number))
     elif math == "divide":
         entry.insert(0, f_num / float(second_number))
     elif math == "mod":
-        entry.insert(0,f_num %  float(second_number))
-    elif math =="square":
+        entry.insert(0,f_num % float(second_number))
+    elif math == "square":
         entry.insert(0, f_num ** float(second_number))
 
 
